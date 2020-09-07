@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Forum</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/" method="POST" class="mt-5">
+           <label for="name">Name:</label>
+           <input type="text"  id="name" name="Name" autocomplete="off"></br>
+           <label for="dob">Date of Birth:</label>
+           <input type="date"  id="dob" name="dob"></br>
+           <label for="country">Country:</label>
+           <input type="text"  id="country" name="country" list="countries" autocomplete="off" >
+            <datalist id="countries">
+            
+            </datalist>
+           
+         </br>
+           <label for="resume">Resume: </label>
+           <input type="file"  id="resume" name="resume"></br>
+           <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
