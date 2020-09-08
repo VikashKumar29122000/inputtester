@@ -7,8 +7,9 @@ var input=document.querySelector('#country')
 
 
 country_list.forEach((country)=>{
-    list.innerHTML+=`<option value="${country}">${country}</option>`
-  
-})
+       list.innerHTML+=`<option value="${country}">${country}</option>`
+ })
 
 
+        
+    

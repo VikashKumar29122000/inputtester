@@ -11,12 +11,50 @@
         <div class="display-4 row">Registered users</div>
         <div class="row mt-4">
             <div class="col-sm-6">
-                <a href="">Sort by Date/Time</a>
+                <a href="/showdata/sortByName" >Sort by Name(A-Z)</a>
+                
             </div>
             <div class="col-sm-6">
-                <a href="">Sort by A-Z</a>
+                <a href="/showdata/sortByDate">Sort by Date/Time</a>
             </div>
         </div>
+        <div class="row mt-2 mb-2">
+            
+            <div class="col-sm-3">
+                Name
+            </div>
+            <div class="col-sm-3">
+               DOB
+            </div>
+            <div class="col-sm-3">
+                Country
+            </div>
+            <div class="col-sm-3">
+                Bio
+            </div>   
+        </div>    
+        <hr>
+        <% Data.forEach((data)=>{ %>
+            <div class="row mt-2 mb-2">
+            
+                <div class="col-sm-3">
+                    <%=data.Name%>
+                </div>
+                <div class="col-sm-3">
+                   <%=data.DOB%> 
+                </div>
+                <div class="col-sm-3">
+                    <%=data.Country%>
+                </div>
+                <div class="col-sm-2">
+                    <%=data.Bio%>
+                </div>   
+                <div class="col-sm-1"><a href="/delete/<%=data.Id%>">Delete</a></div>
+        </div>
+        <%})%>
+
+        <a href="/" class="btn btn-primary offset-sm-5 mt-4">Add User</a>
+        
     </div>
 </body>
 </html>
