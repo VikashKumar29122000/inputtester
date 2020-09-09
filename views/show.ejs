@@ -26,11 +26,11 @@
             <div class="col-sm-3">
                DOB
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-2">
                 Country
             </div>
-            <div class="col-sm-3">
-                Bio
+            <div class="col-sm-2">
+                Bio-Data
             </div>   
         </div>    
         <hr>
@@ -43,17 +43,21 @@
                 <div class="col-sm-3">
                    <%=data.DOB%> 
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-2">
                     <%=data.Country%>
                 </div>
                 <div class="col-sm-2">
-                    <%=data.Bio%>
+                   
+                        <a target="__blank" href="/docs/<%=data.BIo%>.pdf" class="btn btn-sm btn-dark">View</a>
+                       
+
+                    
                 </div>   
-                <div class="col-sm-1"><a href="/delete/<%=data.Id%>">Delete</a></div>
+                <div class="offset-sm-1 col-sm-1"><a href="/delete/<%=data.BIo%>" class="btn btn-danger btn-sm">Delete</a></div>
         </div>
         <%})%>
 
-        <a href="/" class="btn btn-primary offset-sm-5 mt-4">Add User</a>
+        <a href="/" class="btn btn-primary offset-sm-5 mt-4">Add Data</a>
         
     </div>
 </body>
